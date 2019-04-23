@@ -1,3 +1,4 @@
+<!--
 <footer class="footer">
     <div class="footer__inner">
         <div class="footer__content">
@@ -21,3 +22,24 @@
         </div>
     </div>
 </footer>
+
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; {{ now.Format "2006" }} thelastpointer</span>
+            <span>{{- with (not (in (.Site.Language.Get "disableKinds") "RSS")) }} <a href="{{ "posts/index.xml" | absURL }}" target="_blank" title="rss">rss</a>{{ end }}</span>
+            <span><a href="http://gohugo.io">Hugo</a></span>
+            <span><a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+-->
+<!--
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; {{ now.Format "2006" }} thelastpointer</span>
+        </div>
+    </div>
+</footer>
+-->
