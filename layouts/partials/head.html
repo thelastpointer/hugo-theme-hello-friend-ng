@@ -27,6 +27,18 @@
     {{ end }}
 {{ end }}
 
+{{- if isset .Params "extra_css" }}
+    {{ range $val := .Params.extra_css }}
+        <link rel="stylesheet" href="{{ $val }}" />
+    {{ end }}
+{{ end }}
+
+{{- if isset .Params "extra_js" }}
+    {{ range $val := .Params.extra_js }}
+    <script src="{{ $val }}"></script>
+    {{ end }}
+{{ end }}
+
 <!-- Icons -->
 {{- partial "favicons.html" }}
 
