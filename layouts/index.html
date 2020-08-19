@@ -1,5 +1,10 @@
 {{ define "main" }}
     <div id="home-center">
+
+        {{- if .Site.Params.logo.image }}
+        <img id="home-logo" src="{{ .Site.Params.logo.image }}" />
+        {{ end }}
+
         <h1 id="home-title">{{ .Site.Title }}</h1>
 
         {{- with .Site.Params.homeSubtitle }}
