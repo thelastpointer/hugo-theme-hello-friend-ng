@@ -35,6 +35,10 @@ body {
     font-size: 1rem;
   }
 
+  @media print {
+	  font-size: 0.5rem;
+  }
+
   &.dark-theme {
     background-color: $dark-background;
     color: $dark-color;
