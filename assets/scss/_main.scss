@@ -87,6 +87,9 @@ h4 {
 
 a {
   color: inherit;
+  @media print {
+    text-decoration: none;
+  }
 }
 
 img {
